@@ -143,6 +143,10 @@
     <ClCompile Include="NoiseGate.cpp" />
     <ClCompile Include="Note.cpp" />
     <ClCompile Include="Notes.cpp" />
+    <ClCompile Include="PianoEnvelope.cpp" />
+    <ClCompile Include="PianoInstrument.cpp" />
+    <ClCompile Include="PianoInstrumentFactory.cpp" />
+    <ClCompile Include="PianoWave.cpp" />
     <ClCompile Include="Progress.cpp" />
     <ClCompile Include="ProgressDlg.cpp" />
     <ClCompile Include="pch.cpp">
@@ -156,6 +160,7 @@
     <ClCompile Include="audio\Wave.cpp" />
     <ClCompile Include="audio\WaveformBuffer.cpp" />
     <ClCompile Include="audio\WaveformWnd.cpp" />
+    <ClCompile Include="ToneInstrument.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdditiveSineWave.h" />
@@ -172,6 +177,10 @@
     <ClInclude Include="NoiseGate.h" />
     <ClInclude Include="Note.h" />
     <ClInclude Include="Notes.h" />
+    <ClInclude Include="PianoEnvelope.h" />
+    <ClInclude Include="PianoInstrument.h" />
+    <ClInclude Include="PianoInstrumentFactory.h" />
+    <ClInclude Include="PianoWave.h" />
     <ClInclude Include="Progress.h" />
     <ClInclude Include="ProgressDlg.h" />
     <ClInclude Include="Resource.h" />
@@ -184,6 +193,7 @@
     <ClInclude Include="audio\Wave.h" />
     <ClInclude Include="audio\WaveformBuffer.h" />
     <ClInclude Include="audio\WaveformWnd.h" />
+    <ClInclude Include="ToneInstrument.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="res\Synthie.ico" />

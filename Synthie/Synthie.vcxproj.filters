@@ -87,6 +87,21 @@
     <ClCompile Include="Synthesizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ToneInstrument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PianoEnvelope.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PianoInstrument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PianoWave.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PianoInstrumentFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="audio\DirSound.h">
@@ -165,6 +180,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Synthesizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToneInstrument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PianoEnvelope.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PianoInstrument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PianoWave.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PianoInstrumentFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
