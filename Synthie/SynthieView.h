@@ -64,6 +64,7 @@ private:
 	CSynthesizer m_synthesizer;
 public:
 	afx_msg void OnGenerateSynthesizer();
+	
 	afx_msg void OnFileOpenscore();
 };
 
