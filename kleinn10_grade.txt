@@ -1,0 +1,9 @@
+Nicholas Klein
+Additive Synthesizer
+
+10/10 - Sinusoid playback on demand from the sequencer
+20/20 - Definition of all harmonics
+30/30 - Envelope generation
+35/35 - Polyphony
+40/40 - Sound cross-fading
+50/50 - Vibrato OR glissando

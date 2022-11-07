@@ -1,0 +1,9 @@
+Project 1 Group Grade
+Members: Nicholas Klein and Kevin Meehan
+
+10/10 - Suitable length audio files and web site turned in.
+20/20 - Audio file is recognizable as music in the opinion of the TA and Instructor.
+30/30 - Audio file utilizes all system components.
+40/40 - Audio file utilizes all capabilities of all system components.
+40/50 - The script has at least 240 notes in it.
+

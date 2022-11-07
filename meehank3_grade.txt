@@ -1,0 +1,9 @@
+Kevin Meehan
+Piano Synthesizer
+
+10/10 - Plays piano notes
+20/20 - Envelope generation
+30/30 - Pedal simulation
+35/35 - Basic dynamics
+40/40 - Pedal noise
+50/50 - Advanced dynamics
