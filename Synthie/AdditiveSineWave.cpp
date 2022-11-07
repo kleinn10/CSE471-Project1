@@ -62,13 +62,6 @@ void CAdditiveSineWave::GenerateWaveTable()
 		for (float n = 1.0; n * m_freq <= 22050 && n <= 8.0; n++)
 			sample += (m_amplitude * m_amp[int(n - 1)] * (sin(n * radians1)));
 
-		//In case we want to vary vibratoRate			
-		/*if(time < m_duration/2.0){
-			vibratoRate = time/(m_duration/2.0)*(m_freq2- m_freq1) + m_freq1;
-		}
-		else{
-			vibratoRate = (time-m_duration/2.0)/(m_duration/2.0)*(m_freq1- m_freq2) + m_freq2;
-		}*/
 
 		radians2 += (2 * PI * m_vibratoRate) / GetSampleRate();
 		radians1 += (2 * PI * (m_freq + m_vibratoFreq * sin(radians2))) / GetSampleRate();

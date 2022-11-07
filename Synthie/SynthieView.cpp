@@ -43,6 +43,7 @@ BEGIN_MESSAGE_MAP(CSynthieView, CWnd)
 	ON_COMMAND(ID_GENERATE_1000HZTONE, &CSynthieView::OnGenerate1000hztone)
 	ON_COMMAND(ID_GENERATE_SYNTHESIZER, &CSynthieView::OnGenerateSynthesizer)
 	ON_COMMAND(ID_FILE_OPENSCORE, &CSynthieView::OnFileOpenscore)
+	ON_COMMAND(ID_GENERATE_PIANO, &CSynthieView::OnGeneratePiano)
 END_MESSAGE_MAP()
 
 
@@ -256,4 +257,31 @@ void CSynthieView::OnFileOpenscore()
 		return;
 
 	m_synthesizer.OpenScore(dlg.GetPathName());
+}
+
+
+void CSynthieView::OnGeneratePiano()
+{
+	// Call to open the generator output
+	if (!GenerateBegin())
+		return;
+
+	m_piano.Start();
+	short audio[2];
+	double frame[2];
+
+	while (m_piano.Generate())
+	{
+		audio[0] = RangeBound(frame[0]/* * 32767 */);
+		audio[1] = RangeBound(frame[1]/* * 32767 */);
+
+		GenerateWriteFrame(audio);
+
+		// The progress control
+		if (ProgressAbortCheck())
+			break;
+	}
+
+	// Call to close the generator output
+	GenerateEnd();
 }

@@ -10,6 +10,7 @@
 #include "audio/DirSoundStream.h"	// Added by ClassView
 #include "audio/WaveformBuffer.h"
 #include "synthesizer.h"
+#include <PianoInstrument.h>
 
 
 // CSynthieView window
@@ -62,9 +63,11 @@ public:
 	afx_msg void OnGenerate1000hztone();
 private:
 	CSynthesizer m_synthesizer;
+	CPianoInstrument m_piano;
 public:
 	afx_msg void OnGenerateSynthesizer();
 	
 	afx_msg void OnFileOpenscore();
+	afx_msg void OnGeneratePiano();
 };
 

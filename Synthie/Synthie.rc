@@ -131,6 +131,7 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "&1000Hz Tone",                ID_GENERATE_1000HZTONE
         MENUITEM "&Synthesizer",                ID_GENERATE_SYNTHESIZER
+        MENUITEM "&Piano",                      ID_GENERATE_PIANO
     END
     POPUP "&Edit"
     BEGIN

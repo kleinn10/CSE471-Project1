@@ -50,6 +50,7 @@ bool CAdditiveSynth::Generate()
 	else if(m_time > (m_duration  - m_release))
 		factor = m_time*-1./m_release + (1./m_release)*(m_duration);
 */
+
 	double factor = 1.0;
 	double sign = -1.0;
 	if (m_sustain > 1.0) sign = 1.0;
@@ -64,9 +65,11 @@ bool CAdditiveSynth::Generate()
 		if (m_sustain <= 0) m_sustain = 1.0;
 		factor = m_time * -m_sustain / m_release + (m_sustain / m_release) * (m_duration);
 	}
+
 	else {
 		factor = m_sustain;
 	}
+
 
 	m_frame[0] = m_frame[1] *= factor;
 
